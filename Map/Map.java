@@ -9,6 +9,14 @@ public class Main {
 		map.put(s, n);
 	}// map에 s를 key, n을 value로 추가
 	
+	public static void add2(HashMap<String, Integer> map, String[] str) {
+		for(int i = 0; i < str.length; i++) {
+			map.put(str[i], map.getOrDefault(str[i], 0) + 1);
+		}
+	}// map에 str배열에 있는 문자열을 key로 저장
+	// 이미 있는 값이면 1로 아니면 map에 있는 값 + 1
+	// getOrDefault(찾을 값, 찾을 값이 없을 경우 주어질 값)
+	
 	public static int size(HashMap<String, Integer> map) {
 		return map.size();
 	}// map의 크기 반환
