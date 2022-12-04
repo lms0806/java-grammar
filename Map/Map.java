@@ -1,3 +1,4 @@
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -24,6 +25,13 @@ public class Main {
 	public static int get(HashMap<String, Integer> map, String s) {
 		return map.get(s);
 	}// map에 s의 value 반환
+	
+	public static void values_print(HashMap<String, Integer> map) {
+		Collection<Integer> arr = map.values();
+		
+		System.out.print(arr);
+	}// map에 있는 모든 value값들을 Collections에 저장
+	// Collections에 저장된 값들을 출력
 	
 	public static boolean contains_key(HashMap<String, Integer> map, String s) {
 		return map.containsKey(s);
