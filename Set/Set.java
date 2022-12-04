@@ -44,4 +44,9 @@ public class Main {
 	public static int last_treeset(TreeSet<Integer> set, int n) {
 		return set.last();
 	}// set의 마지막값 출력(treeset)
+	
+	public static void remove_not_same_data(HahsSet<Integer> set1, HashSet<Integer> se2) {
+		set1.retainAll(set2);
+	}// set1에 있는 데이터 중 set2에 있는 데이터와 공통된 데이터만 남김
+	
 }
