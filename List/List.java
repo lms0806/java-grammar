@@ -37,4 +37,8 @@ public class Main {
 	public static void sort(ArrayList<Integer> arr) {
 		Collections.sort(arr);
 	}// 리스트 정렬
+	
+	public static List<Integer> sublist(ArrayList<Integer> arr){
+		return arr.subList(0, arr.size() - 1);
+	}// 주어진 리스트의 (0 ~ 리스트 크기 - 1)만큼만 잘라서 새로운 리스트를 만듬
 }
